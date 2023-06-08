@@ -5,7 +5,7 @@ char *get_next_line(int fd)
     int i = 0;
     int rd = 0;
     char ch;
-    static char *line;
+    char *line;
 
     line = malloc(1000000);
     if (BUFFER_SIZE <= 0 || fd < 0)
