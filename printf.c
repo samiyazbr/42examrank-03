@@ -53,7 +53,7 @@ int ft_printhex(unsigned int num)
     }
     else
     {
-        if (num >= 10 && num <= 16)
+        if (num >= 10 && num < 16)
             len += ft_putchar(num - 10 + 'a');
         else
             len += ft_putchar(num + '0');
