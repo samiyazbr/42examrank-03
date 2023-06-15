@@ -19,9 +19,9 @@ void	ft_putnum(long long int num, int base, int *len)
 		*len += write(1, "-", 1);
 	}
 	if (num >= base)
-		ft_putnum((number / base), base, len);
+		ft_putnum((num / base), base, len);
 	else
-		*len += write(1, &hexadecimal[number % base], 1);
+		*len += write(1, &hexadecimal[num % base], 1);
 }
 
 int	ft_printf(const char *format, ...)
