@@ -44,7 +44,7 @@ int	ft_printf(const char *format, ...)
 				ft_putnum((long long int)va_arg(args, unsigned int), 16, &len);
 		}
 		else
-			length += write(1, format, 1);
+			len += write(1, format, 1);
 		format++;
 	}
 	va_end(args);
