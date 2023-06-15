@@ -6,7 +6,7 @@ void	ft_putstr(char *str, int *len)
 	if (!str)
 		str = "(null)";
 	while (*str)
-		*len += write(1, string++, 1);
+		*len += write(1, str++, 1);
 }
 
 void	ft_putnum(long long int num, int base, int *len)
